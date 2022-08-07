@@ -20,6 +20,6 @@ jobs:
       - name: build the image
         run: |
           docker buildx build --push \
-            --tag sarakata/test:latest \
+            --tag sarakata/test:tagname \
             --platform linux/amd64,linux/arm64 .
 
